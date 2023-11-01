@@ -4,11 +4,15 @@
 
 ### 1. Obtener data de la API
 
-Crear un custom hook que obtenga la lista de ToDos de la API. El hook debe devolver un objeto con 2 elementos: `data` y `refresh`.
+Crear un custom hook que obtenga la lista de ToDos de la API. El hook debe devolver un objeto con 2 elementos: `todos` y `refresh`.
 
 ```javascript
-const { data, refresh } = useFetchToDos();
+const { todos, refresh } = useFetchToDos();
 ```
+
+Usar dicho hook en la vista `Home` para obtener la lista de ToDos y mostrarlos en pantalla.
+
+Opcional: agregar un boton para refreshear la lista de ToDos.
 
 ### 2. Maquetación
 Maquetar el componente `ToDoItem` de acuerdo al diseño proporcionado.
