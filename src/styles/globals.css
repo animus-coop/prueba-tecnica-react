@@ -2,7 +2,7 @@
   transition: 0.5s;
 }
 body{
-  background: #323e4a;
+  background: black;
   padding: 0;
   margin:0;
 }
@@ -10,4 +10,28 @@ body{
 
 h1{
   color: white
+}
+label{
+  color:white;
+}
+
+input, select, option{
+  background: none;
+  width: 100%;
+  border: none;
+  font-size: 30px;
+  border-bottom: 2px solid white;
+  outline: none;
+  color: white;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+button{
+  background: #D01E2E;
+  border: none;
+  color:white;
+  padding: 15px 20px;
+  border-radius: 40px;
+  font-weight: bold;
 }

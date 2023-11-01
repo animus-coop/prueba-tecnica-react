@@ -1,0 +1,37 @@
+.wrapper{
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  border-bottom: 2px solid #d9d9d9;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent{
+  display: flex;
+  gap: 10px;
+}
+.toggle {
+  
+}
+.emoji{
+
+}
+
+.title{
+  color: white;
+}
+.isDone .title{
+  text-decoration: line-through;
+}
+.actions button{
+  background: transparent;
+  border:none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.actions button:active{
+  background: rgba(255,255,255,0.2);
+}

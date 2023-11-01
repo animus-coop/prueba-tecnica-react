@@ -1,0 +1,12 @@
+.wrapper{
+  background: black;
+  height: 100%;
+  border-top-right-radius: 42px;
+  border-bottom-right-radius: 42px;
+  width: 70%;
+  right: 0;
+  top: 0;
+  position: absolute;
+  padding: 30px;
+  box-sizing: border-box;
+}

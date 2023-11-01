@@ -1,0 +1,13 @@
+.formWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.field{
+  margin-bottom: 30px;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}
