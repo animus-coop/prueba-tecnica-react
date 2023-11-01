@@ -55,3 +55,5 @@ const deleteToDo = (id) => {
 ```
 
 Usar dicha función en el componente `ToDoItem` para borrar el ToDo al hacer click en el botón de borrar.
+
+Actualizar la lista de ToDos al borrar un ToDo.
