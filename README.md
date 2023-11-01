@@ -1,5 +1,11 @@
 # Animus Coop. | Prueba Técnica React
 
+## Instrucciones
+
+1. Clonar el repositorio
+2. Instalar dependencias: `npm install`
+3. Correr el proyecto: `npm run dev`
+
 ## Objetivos
 
 ### 1. Obtener data de la API
