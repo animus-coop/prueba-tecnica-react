@@ -6,9 +6,14 @@ import { emojis } from '@/data/emojis'
 
 import styles from '@/styles/AddNewTask.module.css'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 
 
 export default function AddNewTask() {
+  // form state
+  const [title, setTitle] = useState('')
+  const [emoji, setEmoji] = useState(1)
+
 
   const router = useRouter()
 
@@ -20,15 +25,17 @@ export default function AddNewTask() {
         <div className={styles.formWrapper}>
           <div className={styles.fields}>
             <div className={styles.field}>
-              <label htmlFor='taskName'>Task name</label>
-              <input id="taskName" type="text" placeholder="Task name" />
+              <label htmlFor='taskTitle'>Task title</label>
+              <input id="taskTitle" type="text" placeholder="Task title" value={title} onChange={
+                (e) => setTitle(e.target.value)
+              } />
 
             </div>
             <div className={styles.field}>
               <label htmlFor='emoji'>Emoji</label>
-              <select id="emoji">
-                {emojis.map((emoji) => (
-                  <option key={emoji}>{emoji}</option>
+              <select id="emoji" value={emoji} onChange={(e) => {setEmoji(e.target.value)}}>
+                {emojis.map((emoji, index) => (
+                  <option key={emoji} value={index}>{emoji}</option>
                 ))}
               </select>
             </div>
