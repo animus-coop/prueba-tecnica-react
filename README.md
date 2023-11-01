@@ -39,10 +39,6 @@ Crear una función que permita POSTear un nuevo ToDo en la API. La función debe
 ```javascript
 const createToDo = (title, emoji) => {
   // ...
-  return new Promise((resolve, reject) => {
-    // ...
-    resolve(newToDo);
-  });
 }
 ```
 
@@ -55,10 +51,6 @@ Crear una función que permita borrar un ToDo de la API. La función debe recibi
 ```javascript
 const deleteToDo = (id) => {
   // ...
-  return new Promise((resolve, reject) => {
-    // ...
-    resolve(id);
-  });
 }
 ```
 
